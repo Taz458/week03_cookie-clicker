@@ -1,0 +1,154 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding and border are included in element's width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set default font family */
+    background-color: #f3f3f3; /* Light grey background for the entire page */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header Styling */
+header {
+    width: 100%; /* Full width header */
+    background-color: #4caf50; /* Green background for header */
+    color: white; /* White text color */
+    text-align: center; /* Center align header text */
+    padding: 1rem 0; /* Vertical padding for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: absolute; /* Fix position at the top */
+    top: 0; /* Align header to the top of the page */
+}
+
+header h1 {
+    font-size: 2rem; /* Larger font size for header text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Main Layout */
+main {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align children horizontally */
+    justify-content: center; /* Center align children vertically */
+    flex-grow: 1; /* Allow main to grow and fill available space */
+    width: 100%; /* Full width */
+    padding: 2rem 1rem; /* Padding for spacing */
+}
+
+/* Image Styling */
+#image {
+    margin-bottom: 2rem; /* Space below the image */
+}
+
+#image img {
+    width: 250px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Indicate the image is clickable */
+    transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+#image img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Cookies Display Container Styling */
+#displayCookiesContainer {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2rem; /* Space inside the container */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    margin-bottom: 2rem; /* Space below the container */
+}
+
+#displayCookiesContainer h1 {
+    font-size: 1.5rem; /* Larger font for title */
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+#displayCookiesContainer p {
+    font-size: 1.2rem; /* Slightly larger text */
+    margin: 0.5rem 0; /* Vertical spacing between paragraphs */
+}
+
+/* Shop Section Styling */
+#shop {
+    width: 90%; /* Take up 90% of the available width */
+    max-width: 600px; /* Limit maximum width */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem; /* Space inside the shop container */
+    border-radius: 10px; /* Rounded corners */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-height: 300px; /* Limit the height for scrolling */
+}
+
+/* Upgrade Container Styling */
+.upgradeContainer {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr 1fr auto; /* Define grid columns */
+    align-items: center; /* Align items vertically */
+    padding: 1rem; /* Space inside each container */
+    margin-bottom: 1rem; /* Space below each upgrade */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    gap: 10px; /* Space between grid items */
+}
+
+.upgradeContainer p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Set text size */
+    text-align: center; /* Center align text */
+}
+
+.upgradeContainer button {
+    background-color: #4caf50; /* Green background for buttons */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 0.5rem 1rem; /* Space inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Indicate button is clickable */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.upgradeContainer button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Reset Button Styling */
+#resetButton {
+    position: absolute;
+    bottom: 2rem; /* Positions it near the bottom of the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    background-color: #ff6f61; /* Eye-catching red color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#resetButton:hover {
+    background-color: #ff4a3d; /* Slightly darker red on hover */
+    transform: translateX(-50%) scale(1.05); /* Slight zoom on hover */
+}
+
+#resetButton:active {
+    background-color: #d93c2f; /* Even darker red when clicked */
+}
